@@ -6,7 +6,7 @@ Green: #00B172
 White: #FFF
 
 */
-
+/* nav bar */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ White: #FFF
 nav {
     position: fixed;
     display: flex;
-    height: 10vh;
+    height: 80px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -33,6 +33,7 @@ nav ul{
     list-style-type:none;
     align-items: center;
     justify-content: space-between;   
+    margin-right: 10px;
 }
 
 ul a {
@@ -42,16 +43,16 @@ ul a {
     margin: 0 10px;
 }
 
+/* main */
+
 .main {
     width: 100vw;
-    height: 90vh;
+    height: 800px;
     background-image: url(/images/landing.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .main div{
@@ -72,4 +73,90 @@ ul a {
     text-align: center;
     font-weight: 100;
     margin-top: 5%;
+}
+
+/* description */
+
+.description {
+    width: 100vw;
+    height: 400px;
+}
+
+.description h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.description img {
+    height: 100px;
+}
+
+.description article {
+    height: 50vh;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 80px;
+}
+
+.description article div {
+    width: 25vw;
+    text-align: center;
+}
+
+.description p{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.description h3 {
+    color: #00B172;
+    margin: 10px;
+}
+
+/* artist */
+
+.artist {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00B172;
+    width: 100vw;
+    height: 600px;
+    align-items: center;
+    background-image: url(/images/spotify-icon-white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+
+}
+
+.artist div {
+    width: 40vw;
+}
+
+.artist div h2{
+    width: 310px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #FFF;
+    margin-bottom: 40px;
+}
+
+.artist div h3 {
+    width: 250px;
+}
+
+.artist div p {
+    width: 250px;
+    font-weight: 100;
+}
+
+.artist div *{
+    color: #FFF;
+    margin: 20px 0;
+}
+
+.artist img {
+   height: 400px;
 }
